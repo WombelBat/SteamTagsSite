@@ -1,0 +1,6 @@
+.venv
+__pycache__
+json_structure.txt
+server.js
+.ig
+temp.py

@@ -1,0 +1,121 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-size: 466px 349px;
+  background-color: #111;
+  color: #aaa;
+  line-height: 160%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  text-shadow: 0px 1px 1px #0a0a0a;
+  display: block;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Exo", sans-serif;
+  font-weight: 300;
+  font-size: 1.8em;
+  margin: 4px 0;
+  padding: 12px 0;
+}
+
+form {
+  margin-top: 0em;
+}
+
+#header {
+  color: #aaa;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  text-shadow: 0px 1px 1px #0a0a0a;
+  margin-top: 4px;
+  padding: 6px 0;
+  line-height: 200%;
+}
+
+input[type="text"] {
+  display: inline-block;
+  color: #fff;
+  background-color: #1a1a1a;
+  width: 140px;
+  height: 1.6em;
+  line-height: 1.6em;
+  font-size: 1em;
+  padding: 0 5px;
+  border: 1px solid #333;
+  border-radius: 2px;
+}
+
+input {
+  outline: none;
+}
+
+#content-wrap {
+  margin: 0 auto;
+  width: 720px;
+}
+
+.content,
+.content-review,
+.random-fact {
+  color: #aaa;
+  line-height: 160%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  text-shadow: 0px 1px 1px #0a0a0a;
+  background-color: #1a1a1a;
+  width: 700px;
+  padding: 0 14px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+#button {
+  font-size: 1em;
+  font-weight: 100;
+  background-color: green;
+  width: auto;
+  padding: 0 14px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  margin-top: 10px;
+}
+
+#logo-charts {
+  color: green;
+}
+
+#closing {
+  line-height: 160%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  text-shadow: 0px 1px 1px #0a0a0a;
+  color: #555;
+  font-size: 0.7em;
+  margin: 1em 0;
+  clear: both;
+}
+
+#footer {
+  color: #aaa;
+  line-height: 160%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 100;
+  text-shadow: 0px 1px 1px #0a0a0a;
+  margin: 1em;
+}

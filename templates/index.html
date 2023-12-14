@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="track the most played games" />
+    <link
+      rel="stylesheet"
+      <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+    />
+    <title>Databases - Tracking what's played</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  </head>
+  <body>
+    <div id="content-wrap">
+      <div id="header">
+        <a id="logo" href="index.html"
+          ><span id="logo-steam">STEAM</span
+          ><span id="logo-charts">TAGS</span></a
+        >
+        <i>An ongoing analysis of Steam's game tags.</i>
+        <div style="float: right">
+          <form action="/search/" id="search" class="inline" role="search">
+            <input type="text" name="q" placeholder="search tags" />
+          </form>
+        </div>
+      </div>
+      <div class="content">
+        <h2>TOP 10 TRENDING TAGS</h2>
+        <table id="trending-recent" class="trending common-table">
+          <tbody>
+            <tr class="odd">
+              <td class="game-name left"></td>
+              <td class="num">
+                <canvas
+                  id="myChart"
+                  style="width: 100%; max-width: 600px"
+                ></canvas>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="random-fact">
+        <h2>Facts about gaming</h2>
+        <fieldset>
+          <h3>
+            Want to hear a fun fact about gaming? Press the button down below!
+          </h3>
+          <section>
+            <span class="fact">Find out</span>
+            <button id="button">Press</button>
+          </section>
+        </fieldset>
+      </div>
+      <div class="content-review">
+        <h2>TOP 10 TAGS BY PLAYER REVIEWS</h2>
+        <table id="trending-recent" class="trending common-table">
+          <tbody>
+            <tr class="odd">
+              <td class="game-name left"></td>
+              <td class="num">
+                <canvas
+                  id="myChart1"
+                  style="width: 100%; max-width: 600px"
+                ></canvas>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="twitter">
+        <a
+          class="twitter-timeline"
+          href="https://twitter.com/SteamTags?ref_src=twsrc%5Etfw"
+          >Tweets by SteamTags</a
+        >
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </div>
+      <div id="footer">
+        <a href="#">About</a> | <a href="#">Privacy</a> |
+        <a href="#">Advertise</a> |
+      </div>
+      <div id="closing">
+        "All data is
+        <a href="http://steampowered.com">powered by Steam</a>
+        . Not affiliated with Valve in any way. All trademarks are property of
+        their respective owners in the US and other countries. Out goal is to
+        provide unique insight into gaming trends. © steamtags.com"
+      </div>
+    </div>
+
+    <script src="{{url_for('static', filename='index.js')}}"></script>
+  </body>
+</html>
