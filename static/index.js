@@ -183,7 +183,8 @@ document.addEventListener("keypress", function (event) {
           yValues.push(data[i].quantity);
           console.log(data[i].date);
         }
-
+        console.log(yValues[0]);
+        console.log(xValues);
         new Chart("myChart2", {
           type: "line",
           data: {
@@ -198,8 +199,8 @@ document.addEventListener("keypress", function (event) {
               yAxes: [{
                 ticks: {
                   beginAtZero: true,
-                  max: 10,
-                  min: 0
+                  max: 3000,
+                  min: 2000
                 }
               }
               ],
@@ -277,6 +278,8 @@ function TagByDay() {
 }
 
 /* FACTS */
+
+callALLFunctions();
 setInterval(callALLFunctions, 20000);
 // RGraph.Ajax.getJSON('/graphs/review', reviewValuesAsync);
 // setInterval(trendingValues, 4000);

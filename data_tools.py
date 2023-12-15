@@ -50,7 +50,10 @@ def TopTagsByReviews(datasets):
     tags = []
 
     for game in dataset:
-        ratio = game["positive"] / (game["negative"] + game["positive"])
+        ratio = 0
+        if game["negative"] + game["positive"] != 0:
+            ratio = game["positive"] / (game["negative"] + game["positive"])
+
         for tag in game["tags"]:
             index = FindTag(tag, tags)
             if index == -1:
@@ -81,8 +84,8 @@ def TagByDay(datasets, tag):
 
         counter = 0
         for game in dataset:
-            if tag in game["tags"]:
-                counter = counter + 1
+            if any(t.lower() == tag.lower() for t in game["tags"]):
+                counter += 1
         point["quantity"] = counter
         points.append(point)
     return points
